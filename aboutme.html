@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>About Me - Roggernaut</title>
+</head>
+
+<link rel="stylesheet" href="https://raw.github.com/necolas/normalize.css/master/normalize.css">
+<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Simonetta' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fresca' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<style type="text/css">
+html { -webkit-font-smoothing: antialiased; }
+.navigation {
+	margin-top:-27px;
+}
+.navigation li {
+	position: relative; 
+	list-style-type:none;
+	border-right: 1px solid #ddd;
+	}
+li:last-child {border-right:none; padding-right:0px; margin-right: 0;}
+.navigation .children {left: -999em; position: absolute; }
+nav a {
+	color: inherit;
+	display:block;
+	text-decoration: none;
+}
+.navigation ul, li, a {
+	float:left; 
+	font-family:Helvetica, Verdana, sans-serif;
+	color: #222;}
+.navigation ul li:hover {
+	border-bottom: 3px solid #999;
+	height: 39px;
+}
+.navigation ul li:active {
+	background-color:#F00;
+	border:none;
+	height:inherit;
+	color:#FFF;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	font-weight:bold;
+}
+.navigation ul li.activated {
+	border-bottom:2px solid #F00;
+}
+.navigation a {
+	height:35px;
+	line-height:35px;
+	margin: 3px;
+	padding: 0 15px;
+}
+.navigation ul {width:100%;}
+
+<!--.navigation { font-size:1.2em;}
+<!--.navigation:before, navigation:after {content:""; display:table;}
+.navigation:after, navigation:before {clear:both;}
+ul {
+	background:#eee;
+	border: 1px solid #ddd;
+}
+.navigation ul li.current {
+	border-bottom:2px solid #F00;
+}
+span.title-sub {
+	font-family:'Doppio One', sans-serif;
+	font-size:1.4em;
+	font-stretch:narrower;
+	display:inline;
+}
+span.period {
+	display:inline;
+	color:#F00;
+	size:1.8em;
+	font-family:'Doppio One', sans-serif;
+	font-weight:bold;
+}
+.atitle {
+	font-size:1.6em;
+	font-weight:bold;
+	font-family:'Doppio One', sans-serif;
+}
+nav.navigation ul li.atitle {
+	margin-left: -40px;
+	padding-right: 10px;
+	padding-left:10px;
+	background-color:#222;
+	color:#eee;
+	height:42px;
+}
+#no-border:hover {border:none;}
+.spacer {margin-left: 32%;}	
+footer {
+	width:100%;
+	height:40px;
+	margin:0 auto;
+	margin-top:30px;
+	background-color:#111;
+	color:#FFF;
+	text-align:center;
+	font-family:Fresca, sans-serif;
+	padding-top: 20px;
+	font-size:1.1em;
+}
+span #copyright {
+	font-family:Fresca, sans-serif;
+	display:block;
+	border:1px solid #FFF;
+}
+#aboutMe {
+	font-family:sans-serif;
+	font-size:1.8em;
+	color:#000;
+	padding-bottom:10px;
+	border-bottom: 2px solid #F00;
+	width:6em;
+	margin-bottom:20px;
+}
+#photo {
+	margin: 0 20px 30px 10px;
+	border:1px solid #999;
+	padding:10px;
+	background-color:#EEE;
+	float:left;
+}
+#container p {
+	font-family:sans-serif;
+	color:#222;
+	height:429px;
+	font-size:1.4em;
+	line-height:1.4em;
+}
+#container p span {
+	display:inline;
+	border-bottom: 1px dashed #F00;
+	font-size:1.42em;
+}
+</style>
+<body>
+<nav class="navigation">
+	<ul>
+    	<li id="no-border" class="atitle">ROGGERNAUT<span class="period">_</span></li>
+      	<li class="spacer"><a href="#">About</a></li>
+  	  	<li class="current"><a href="#">Blog</a></li>
+  		<li><a href="#">Portfolio</a></li>
+      	<li><a href="#">Contact</a></li>
+  	</ul>
+</nav>
+<h2 id="aboutMe">About Me</h1>
+<div id="container">
+	<img id="photo" src="photo.jpeg" width="200" height="419" alt="My Picture" />
+	<p id="aboutText">My name is <span>Rogger Matamoros</span>. I am 21 years old, born in 
+    Petaluma, CA, raised in <span>Tlaxcala, Mexico</span> and later, <span>Newton, NC</span>. I currently attend Lenoir-Rhyne 	
+    University as a <span>Computer Science</span> major with a minor in either <span>Economics</span> or <span>Math</span>. 
+    <br /><br />
+    After receiving my undergrad degree, I plan to go to grad school for either <span>Computer Engineering</span> or <span>
+    Information Security</span>, with the goal of one day working for companies like Microsoft, Google, Apple, HTC, Motorola, 
+    Goldman Sachs, or J.P. Morgan.
+    </p>
+</div>
+<footer>
+	<span id="copyright">Designed by and Copyright 2012 / MMXII, Rogger Matamoros. Stay Classy my friends.</span>
+</footer>
+</body>
+</html>

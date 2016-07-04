@@ -1,0 +1,235 @@
+<!DOCTYPE html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Portfolio - Roggernaut</title>
+</head>
+
+<link rel="stylesheet" href="https://raw.github.com/necolas/normalize.css/master/normalize.css">
+<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Simonetta' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Fresca' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<style type="text/css">
+html { -webkit-font-smoothing: antialiased; font-family:sans-serif; }
+.navigation {
+margin-top:-27px;
+}
+.navigation li {
+position: relative; 
+list-style-type:none;
+border-right: 1px solid #ddd;
+}
+li:last-child {border-right:none; padding-right:0px; margin-right: 0;}
+.navigation .children {left: -999em; position: absolute; }
+nav a {
+color: inherit;
+display:block;
+text-decoration: none;
+}
+.navigation ul, li, a {
+float:left; 
+font-family:Helvetica, Verdana, sans-serif;
+color: #222;}
+.navigation ul li:hover {
+border-bottom: 3px solid #999;
+height: 39px;
+}
+.navigation ul li:active {
+background-color:#F00;
+border:none;
+height:inherit;
+color:#FFF;
+border-radius: 15px;
+-moz-border-radius: 15px;
+font-weight:bold;
+}
+.navigation ul li.activated {
+border-bottom:2px solid #F00;
+}
+.navigation a {
+height:35px;
+line-height:35px;
+margin: 3px;
+padding: 0 15px;
+}
+.navigation ul {width:100%;}
+.navigation:after, navigation:before {clear:both;}
+ul {
+background:#eee;
+border: 1px solid #ddd;
+}
+.navigation ul li.current {
+border-bottom:2px solid #F00;
+}
+span.title-sub {
+font-family:'Doppio One', sans-serif;
+font-size:1.4em;
+font-stretch:narrower;
+display:inline;
+}
+span.period {
+display:inline;
+color:#F00;
+size:1.8em;
+font-family:'Doppio One', sans-serif;
+font-weight:bold;
+}
+.atitle {
+font-size:1.6em;
+font-weight:bold;
+font-family:'Doppio One', sans-serif;
+}
+nav.navigation ul li.atitle {
+margin-left: -40px;
+padding-right: 10px;
+padding-left:10px;
+background-color:#222;
+color:#eee;
+height:42px;
+}
+#no-border:hover {border:none;}
+.spacer {margin-left: 32%;}
+.portfolio-header ul li {
+display:block;
+line-height:35px;
+}
+.portfolio-header h2 {
+font-family:sans-serif;
+font-size:1.8em;
+color:#000;
+padding-bottom:10px;
+border-bottom: 2px solid #F00;
+border-bottom: 2px solid #F00;
+width:12em;
+margin-bottom:20px;
+}
+.portfolio-header ul li:first-child {
+color:#DDD;
+border-bottom: 2px solid #F00;
+padding: 0 10px 0 10px;
+}
+.portfolio-header ul li {
+margin-right: 20px;
+background-color: #000;
+padding:0 25px 0 25px;
+color:#DDD;
+}
+.portfolio-header ul li:hover {
+border-bottom: 2px solid black;
+color:#FFF;
+background-color: #F00;
+}
+.portfolio-header ul li:active {
+color: black;
+background-color: white;
+}
+.portfolioMenu {
+list-style-type:none;
+text-decoration:none;
+margin: 0 auto;
+}	
+.portfolioElements {
+border: 1px solid #555;
+margin: 25px auto 0 auto;
+margin-top: 50px;
+padding: 3px;
+background-color: #bbb;
+width: 220px;
+height: 220px;
+}
+.portfolioElements p {
+background-color:#000;
+border:1px solid black;
+display:block;
+opacity: 0.5;
+color: #DDD;
+font-size: 0.9em;
+z-index:1;
+font-weight: bold;
+}
+portfolioElements img {
+z-index:0;
+}
+.portfolioElements p span {
+color: red;
+}
+#android {
+}
+#iOS {
+}
+#osx {
+}
+footer {
+	width:100%;
+	height:40px;
+	margin:0 auto;
+	margin-top:30px;
+	background-color:#111;
+	color:#FFF;
+	text-align:center;
+	font-family:Fresca, sans-serif;
+	padding-top: 20px;
+	font-size:1.1em;
+}
+</style>
+<body>
+<nav class="navigation">
+	<ul>
+    	<li id="no-border" class="atitle">ROGGERNAUT<span class="period">_</span></li>
+    	<li class="spacer"><a href="#">About</a></li>
+    	<li><a href="http://randompersonalblog.wordpress.com/">Blog</a></li>
+    	<li class="current"><a href="#">Portfolio</a></li>
+    	<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+<div class="portfolio-header">
+<h2>Portfolio / Recent Work</h2>
+    <ul class="portfolioMenu">
+    <li>Categories:</li>
+        <li onclick="document.getElementById('android').style.display='none'; document.getElementById('osx').style.display = 'none' ; document.getElementById('iOS').style.display = 'block'">iOS</li>
+        <li onclick="document.getElementById('iOS').style.display='none'; document.getElementById('osx').style.display = 'none' ; document.getElementById('android').style.display = 'block'">Android</li>
+    	<li onclick="document.getElementById('iOS').style.display='none'; document.getElementById('android').style.display = 'none' ; document.getElementById('osx').style.display = 'block'">OS X</li>
+    	<li onclick="document.getElementById('iOS').style.display='block'; document.getElementById('osx').style.display = 'block' ; document.getElementById('android').style.display = 'block'">Combined</li>
+     </ul>
+</div>
+<div id="android">
+<div class="portfolioElements">
+    <a href="table.jpg" width="200" height="200"></a>
+    <p><span class="portfolio-title">Maitre D'<br /></span>A restaurant host's best friend.</p>
+</div>
+<div class="portfolioElements">
+	<p><span class="portfolio-title">Super Snappy<br /></span>A super-fast camera app for Android.</p>
+</div>
+<div class="portfolioElements">
+    <p><span class="portfolio-title">Mother of God!<br /></span></span>A news-reader exclusively for celeb news</p>
+</div>
+</div>
+<div id="iOS">
+<div class="portfolioElements">
+    <a href="table.jpg" width="200" height="200"></a>
+    <p><span class="portfolio-title">Mega Man<br /></span>A remake of the 90s game classic.</p>
+</div>
+<div class="portfolioElements">
+	<p><span class="portfolio-title">Big Tipper<br /></span>A simple tip calculator. No frills.</p>
+</div>
+<div class="portfolioElements">
+    <p><span class="portfolio-title">Taskmania<br /></span></span>A to-do list manager with Google Tasks integration, for OS X.</p>
+</div>
+</div>
+<div id="osx">
+<div class="portfolioElements">
+    <a href="table.jpg" width="200" height="200"></a>
+    <p><span class="portfolio-title">Conquer the World<br /></span>A Risk-like strategy game.</p>
+</div>
+<div class="portfolioElements">
+	<p><span class="portfolio-title">Encyclopedia Chemiae<br /></span>A periodic table of the elements.</p>
+</div>
+<div class="portfolioElements">
+    <p><span class="portfolio-title">Enlighten<br /></span></span>A screensaver with random Wikipedia entries.</p>
+</div>
+</div>
+<footer>
+	<span id="copyright">Designed by and Copyright 2012 / MMXII, Rogger Matamoros. Stay Classy my friends.</span>
+</footer>
+</body>
+</html>
